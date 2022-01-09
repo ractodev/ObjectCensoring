@@ -170,7 +170,7 @@ def run_segmentation_visualization():
 def choose_input_image():
     while True:
         print("Choose input image: (exclude .jpg)")
-        user_input = "input/" + input() + ".jpg"
+        user_input = input() + ".jpg"
         if path.exists(user_input):
             print("You chose", user_input)
             break
