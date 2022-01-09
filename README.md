@@ -8,11 +8,11 @@ Prerequisites:
 * Some packages needs to be installed using PIP (the console will prompt you on the needed packages that needs to be installed).
 
 ### Step 1.
-Add the image(s) you want to use into the `input` folder. Be sure to convert the pictures to .jpg-format.
+Add the image(s) you want to use into the project-folder. Be sure to convert the pictures to .jpg-format.
 
 ### Step 2.
 Compile and run `blur_object.py`. The program will prompt you to choose an input. Enter the image-name in the console excluding the ".jpg".
-*For example: If you want to use a picture called `person_and_dog.jpg` in the input-folder, enter in the console: "person_and_dog".*
+*For example: If you want to use a picture called `person_and_dog.jpg` in the project-folder, enter in the console: "person_and_dog".*
 
 ### Step 3.
 The program will show you the segmentation map and what objects it has detected to the far right in the picture. 
