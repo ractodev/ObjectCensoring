@@ -58,7 +58,7 @@ class Model(object):
         segmentation_map = batch_segmentation_map[0]
         return resized_image, segmentation_map
 
-# Function to colorize detected objects in segmentation map              TODO: rename function
+# Function to colorize detected objects in segmentation map             
 def colorize_detected_objects():
     colormap = np.zeros((256, 3), dtype=int)
     ind = np.arange(256, dtype=int)
@@ -70,22 +70,20 @@ def colorize_detected_objects():
 
     return colormap
 
-# Function to label detected objects in segmentation map                 TODO: rename function
+# Function to label detected objects in segmentation map                
 def label_detected_objects(label):
-    # TODO: might be deleted
     if label.ndim != 2:
         raise ValueError('Expect 2-D input label')
 
     colormap = colorize_detected_objects()
 
-    # TODO: might be deleted
     if np.max(label) >= len(colormap):
         raise ValueError('label value too large.')
 
     return colormap[label]
 
 
-# Function to display the process of the segmentation map                TODO: rename function
+# Function to display the process of the segmentation map             
 def visualize_segmentation_process(image, segmentation_map):
     plt.figure(figsize=(15, 5))
     grid_spec = gridspec.GridSpec(1, 4, width_ratios=[6, 6, 6, 1])
@@ -193,7 +191,6 @@ def choose_object_type():
     return np.where(COCO_OBJECTS == user_input)
 
 
-# TODO: write function to let user determine input image
 IMAGE_NAME = choose_input_image()
 resized_image, segmentation_map = run_segmentation_visualization()
 
