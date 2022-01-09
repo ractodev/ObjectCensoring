@@ -11,7 +11,7 @@ Prerequisites:
 Add the image(s) you want to use into the `input` folder. Be sure to convert the pictures to .jpg-format.
 
 ### Step 2.
-Compile and run. The program will prompt you to choose an input. Enter the image-name in the console excluding the ".jpg".
+Compile and run `blur_object.py`. The program will prompt you to choose an input. Enter the image-name in the console excluding the ".jpg".
 *For example: If you want to use a picture called `person_and_dog.jpg` in the input-folder, enter in the console: "person_and_dog".*
 
 ### Step 3.
