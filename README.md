@@ -22,7 +22,8 @@ Once the segmentation map has been closed down, the program will prompt the user
 Select the one of the objects that showed up on the segmentation map. Otherwise: the console will print out all objects types that 
 the user can choose from. However, if the selected object type is not detected by the segmentation process, nothing in the image will
 be censored.
-*For example: The program detects a person-object and a dog-object in the image the user selected as input. In this case, you can enter "person" or "dog" in the console to censor the objects.*
+
+*For example: The program detects a person-object and a dog-object in the image the user selected as input. In this case, you can enter "person" or "dog" in the console to censor the object you wish to blur.*
 
 ### Final step.
 The resulting image with censored objects will be located in the project-folder. This image will be named `result.jpg`.
