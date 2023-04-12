@@ -1,5 +1,5 @@
 # ObjectCensoring
-This application allows the user to censor objects in a image using a trained Artificial Neural Network. This project has been a part of the course DD2380 Artificial Intelligence: https://www.kth.se/student/kurser/kurs/DD2380?l=en.
+This application allows the user to censor objects in a image using a trained Artificial Neural Network. This project has been a part of the course DD2380 Artificial Intelligence.
 
 ## How to run:
 Prerequisites:
