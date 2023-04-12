@@ -1,5 +1,5 @@
 # ObjectCensoring
-This application allows the user to censor objects in a picture using Artificial Neural Networks.
+This application allows the user to censor objects in a image using a trained Artificial Neural Network.
 
 ## How to run:
 Prerequisites:
@@ -11,8 +11,8 @@ Prerequisites:
 Add the image(s) you want to use into the project-folder. Be sure to convert the pictures to .jpg-format.
 
 ### Step 2.
-Compile and run `blur_object.py`. The program will prompt you to choose an input. Enter the image-name in the console excluding the ".jpg".
-*For example: If you want to use a picture called `person_and_dog.jpg` in the project-folder, enter in the console: "person_and_dog".*
+Compile and run `blur_object.py`. The program will prompt you to choose an input. Enter the name of the image in the console excluding the extension (.jpg).
+*For example: If you want to use a picture called `person_and_dog.jpg`, the input argument should be specified as: "person_and_dog".*
 
 ### Step 3.
 The program will show you the segmentation map and what objects it has detected to the far right in the picture. 
@@ -22,8 +22,7 @@ Once the segmentation map has been closed down, the program will prompt the user
 Select the one of the objects that showed up on the segmentation map. Otherwise: the console will print out all objects types that 
 the user can choose from. However, if the selected object type is not detected by the segmentation process, nothing in the image will
 be censored.
-*For example: The program detects a person-object and a dog-object in the image the user selected as input. Enter "person" or "dog" in
-the console to censor the objects.*
+*For example: The program detects a person-object and a dog-object in the image the user selected as input. In this case, you can enter "person" or "dog" in the console to censor the objects.*
 
 ### Final step.
 The resulting image with censored objects will be located in the project-folder. This image will be named `result.jpg`.
